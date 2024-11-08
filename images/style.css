@@ -1,103 +1,98 @@
 body{
-    background-image:url(images/background.jpg);
-    background-color: black;
+  background-image: url("ground.gif");
+  background-size: 600px;
+    background-color: rgb(255, 255, 255);
 }
 h1{
    color:black;
-}
-@font-face {
-   font-family:'top';
-   src: url(images/top.ttf);
-   src: url(images/top.ttf) format(truetype); 
+   font-family:"Fira Sans";
 }
 
-.top-Font{
-   font-family:'top';
-   font-size:70px;
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url('fonts/main.tff');
+  src: url('fonts/main.tff') format('embedded-opentype');
+  
+}
+@font-face { font-family: oknot; src: url('fonts/main.tff'); } 
+.font{
+   font-family: oknot;
+}
+
+img{
+  display: flex;
+}
+button{
+  display: flex;
+font-size:25px;
+
 }
 header { 
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content:flex-end;
     flex-flow: wrap;
-    align-items:flex-start;
-    gap: 2em;
-    padding-left:1200px;
+    align-items:center;
+    padding-right:10px;
+    gap:14px;
+    padding:10px; 
+    font-family:oknot;
     
-    height: 100vh;
-    width: 100vw;
     
-    font-family:top;
-    
+    border: 10px solid rgb(187, 0, 187);
+    background-color: rgb(4, 153, 146);
     overflow: hidden;
-  }
-.pixel-grid {
-    display: grid;
-    row-gap: 0;
-    column-gap:0;
-    grid-template-columns: repeat(20, 10px);
-    grid-template-rows: repeat(11, 10px);
-    
-    filter: drop-shadow(0 20px 0 #f309ff);
-    
-    cursor: pointer;
-  }
-  
-  .pixel-grid:active {
-    transform: translate(0,20px);
-    filter: drop-shadow(0 0 0 #545454)
-  }
-  
-  
-  /* ------------------- pixel styles ------------------- */
-  
-  .transparent {
-    background-color: transparent;
-    height: 20px;
-    width: 20px;
-  }
-  
-  .black {
-    background-color:#9003e8;
-    height: 20px;
-    width: 20px;
-  }
-  
-  .lightg {
-    background-color: #f67bf6;
-    height: 20px;
-    width: 20px;
-  }
-  
-  .white {
-    background-color: #d600d2;
-    height: 20px;
-    width: 20px;
-  }
-  
-  .grey {
-    background-color: #f309ff;
-    height: 20px;
-    width: 20px;
-  }
-  
-  /* ------------------- text styles ------------------- */
-  .text {
-    filter: none;
-    position: absolute;
+}
+
+.topnav{
+  padding-right: 1090px;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Style the "active" element to highlight the current page */
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: left;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
     display: block;
-    
-    z-index: 5;
-  
-    font-size: 30px;
+    text-align: left;
     width: 100%;
-    height: 100%;
-    top: 28%;
-    text-align: center;
+    margin: 0;
+    padding: 14px;
   }
-  
-  a {
-    text-decoration: none;
-    color: black;
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
   }
-  
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
