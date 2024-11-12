@@ -5,22 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamesite</title>
     <link rel="stylesheet" href="images/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <img src="images/smalllogo.jpg" width="5%">    
     <div class="topnav">
     <input type="text" placeholder="Search..">
   </div>
     <button type="button">Click Me!</button>
     <button type="button">Click Me!</button>
-    <button type="button">Click Me!</button>  
-
+    <button type="button">Click Me!</button> 
   </header>
   <div class="container">
-    <img src="images/back.jpg" alt="Snow" style="width:10%;">
-    <div class="centered">Centered</div>
+    <img src="images/undertop.drawio.png" alt="Snow" style="width:100%;">
+    <div class="centered"><img src="images/largelogo.jpg" style="width:60%;">
+    <h3>bringing retro vibes to a digital age</h3></div>
   </div>
-
+<h4>sfsafsafsdf</h4>
+<h4>sfsafsafsdf</h4>
+<h4>sfsafsafsdf</h4>
+<h4>sfsafsafsdf</h4>
+<h4>sfsafsafsdf</h4>
+<h4>sfsafsafsdf</h4>
+<div class="container" id="d" data-aos="fade-left">
+  <img src="images/under1.png" style="width:100%;" >
+  <div class="centered">
+    <h3>welcome to our website</h3>
+    <h3>to check out our emulators click below</h3>
+  </div>
+</div>
+<h4>sfsafsafsdf</h4>
+<h4>sfsafsafsdf</h4>
+<div class="container" id="d" data-aos="fade-right">
+  <img src="images/junk.drawio.png" style="width:100%;">
+  <div class="centered">
+    <h3>welcome </h3>
+  </div>
+  <h4>sfsafsafsdf</h4>
+  <h4>sfsafsafsdf</h4>
+</div>
+<div class="container" id="d" data-aos="fade-left">
+  <img src="images/under1.png" style="width:100%;">
+  <div class="centered">
+    <h3>welcome </h3>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    AOS.init({
+      duration:1200,
+      once: false,
+      mirror: true,
+      easing: 'ease=in-out',
+    });
+    window.addEventListener('scroll', () => {
+      AOS.refresh();
+    });
+  });
+</script>
 </body>
 </html>

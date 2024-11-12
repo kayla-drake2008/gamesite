@@ -8,24 +8,16 @@ h1{
    font-family:"Fira Sans";
 }
 
-
 @font-face {
-  font-family: "Fira Sans";
-  src: url('fonts/main.tff');
-  src: url('fonts/main.tff') format('embedded-opentype');
-  
+  font-family: myF;
+  src: url(main.tff);
 }
-@font-face { font-family: oknot; src: url('fonts/main.tff'); } 
-.font{
-   font-family: oknot;
-}
-
 img{
   display: flex;
 }
 button{
   display: flex;
-font-size:25px;
+font-size:38px;
 
 }
 header { 
@@ -46,7 +38,7 @@ header {
 }
 
 .topnav{
-  padding-right: 1090px;
+  padding-right: 1840px;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -68,7 +60,7 @@ header {
   border: none;
   margin-top: 8px;
   margin-right: 16px;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
@@ -89,10 +81,27 @@ header {
   position: relative;
   text-align: center;
   color: white;
+  top:150px
 }
-.centered {
+.centered{
   position: absolute;
-  top: 50%;
-  left: 5%;
+  top: 10%;
+  left: 58%;
   transform: translate(-50%, -50%);
 }
+.centered h3{
+  font-family: myF ;
+  font-size: 70px;
+  position: absolute;
+  left:30%;
+  transform: translate(-50%, -50%);
+}
+.container #d {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+h4{
+  opacity:0;
+}
+
