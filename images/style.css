@@ -8,9 +8,14 @@ h1{
    font-family:"Fira Sans";
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 @font-face {
-  font-family: myF;
-  src: url(main.tff);
+
+  font-family: "topfont"; 
+
+  src: url("ka1.ttf"); 
+
 }
 img{
   display: flex;
@@ -38,7 +43,7 @@ header {
 }
 
 .topnav{
-  padding-right: 1840px;
+  padding-right: 1790px;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -85,15 +90,40 @@ header {
 }
 .centered{
   position: absolute;
-  top: 10%;
+  top: 17%;
   left: 58%;
   transform: translate(-50%, -50%);
 }
+.centered .textonly{
+  font-family: "topfont", "Pixelify Sans";
+  position: absolute;
+  font-size:100px;
+  top: 34%;
+  left:1px;
+  right:200px;
+  transform: translate(-50%, -50%);
+}
 .centered h3{
-  font-family: myF ;
-  font-size: 70px;
+  font-family: "topfont", "Pixelify Sans";
+  font-size: 60px;
   position: absolute;
   left:30%;
+  transform: translate(-50%, -50%);
+}
+.centered h2{
+  font-family: "Pixelify Sans", serif;
+  font-size: 70px;
+  position: absolute;
+  right:20px;
+  top:60px;
+  transform: translate(-50%, -50%);
+}
+.centered #left h2{
+  font-family: "Pixelify Sans", serif;
+  font-size: 70px;
+  position: absolute;
+  left:20px;
+  top:60px;
   transform: translate(-50%, -50%);
 }
 .container #d {
@@ -104,4 +134,22 @@ header {
 h4{
   opacity:0;
 }
-
+.flex-c{
+  display: flex;
+  flex-flow:nowrap;
+  justify-content:space-between;
+}    
+.em img{
+  width: 50%;
+  margin-top:300px;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+} 
+h2{
+  color:azure;
+  font-family: "Pixelify Sans", serif;
+}
+a{
+  font-family: "Pixelify Sans", serif;
+}
