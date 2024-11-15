@@ -16,12 +16,14 @@
   </div>
   <a href="index.html"><button>homepage</button></a>
   <a href="emulat.html"><button>emulators</button></a>
-    <button type="button">Click Me!</button> 
+    <button type="button">about us</button> 
+    <button type="button">tech problems</button> 
   </header>
   <div class="container">
     <img src="images/undertop.drawio.png" alt="Snow" style="width:100%;">
-    <div class="centered textonly">
-    <h2>emulators</h2>
+    <div class="centered">
+      <div class="emu">
+    <h3 style="left:1px;">emulators</h3></div>
   </div>
   </div>
   <div class="flex-c">
@@ -30,13 +32,13 @@
     <h4>khsdkasdjhjhl</h4>
     <h4>khsdkasdjhjhl</h4>
     <div class="em">
-        <a><img src="images/logo1.jpg"></a>
+        <a href="emu.html"><img src="images/logo1.jpg"></a>
     </div>
     <div class="em">
-        <img src="images/logo1.jpg">
+      <a href="emu.html"><img src="images/logo1.jpg"></a>
     </div>
     <div class="em">
-        <img src="images/logo1.jpg">
+      <a href="emu.html"><img src="images/logo1.jpg"></a>
     </div>
 </div>
 <div class="flex-c">
@@ -46,11 +48,11 @@
   </div>
   <h4>jskj;JKLSDF</h4>
   <div class="em">
-    <h2>emulator 1</h2>
+    <h2>emulator 2</h2>
   </div>
   <h4>jskj;JKLSDF</h4>
   <div class="em">
-    <h2>emulator 1</h2>
+    <h2>emulator 3</h2>
   </div>
   <h4>jskj;JAFDASFFFFFFSADKLSDF</h4>
 </div>
@@ -69,22 +71,22 @@
   </div>
   <h4>jskj;JAFDASFFFFFFSADKLSDF</h4>
 </div>
-<div class="flex-c">
+<div class="flex-c" data-aos="fade-up">
   <h4>hjasljsalda</h4>
   <h4>khsdkasdjhjhl</h4>
   <h4>khsdkasdjhjhl</h4>
   <h4>khsdkasdjhjhl</h4>
   <div class="em">
-      <img src="images/logo1.jpg">
+    <a href="emu.html"><img src="images/logo1.jpg"></a>
   </div>
   <div class="em">
-      <img src="images/logo1.jpg">
+    <a href="emu.html"><img src="images/logo1.jpg"></a>
   </div>
   <div class="em">
-      <img src="images/logo1.jpg">   
+    <a href="emu.html"><img src="images/logo1.jpg"></a> 
   </div>
 </div>
-<div class="flex-c">
+<div class="flex-c" data-aos="fade-up">
   <h4>jskj;JKFSDFFFSFADFLSDF</h4>
   <div class="em">
       <h2>emulator 4</h2>
@@ -99,7 +101,7 @@
   </div>
   <h4>jskj;JAFDASFFFFFFSADKLSDF</h4>
 </div>
-<div class="flex-c">
+<div class="flex-c" data-aos="fade-up">
   <h4>jskj;JKFSDFFFSFADFLSDF</h4>
   <div class="em">
       <h2>desc 4</h2>
@@ -114,50 +116,63 @@
   </div>
   <h4>jskj;JAFDASFFFFFFSADKLSDF</h4>
 </div>
-<div class="flex-c">
+<div class="flex-c" data-aos="fade-up">
   <h4>hjasljsalda</h4>
   <h4>khsdkasdjhjhl</h4>
   <h4>khsdkasdjhjhl</h4>
   <h4>khsdkasdjhjhl</h4>
   <div class="em">
-      <img src="images/logo1.jpg">
+    <a href="emu.html"><img src="images/logo1.jpg"></a>
   </div>
   <div class="em">
-      <img src="images/logo1.jpg">
+    <a href="emu.html"><img src="images/logo1.jpg"></a>
   </div>
   <div class="em">
-      <img src="images/logo1.jpg">
+    <a href="emu.html"><img src="images/logo1.jpg"></a>
   </div>
 </div>
-<div class="flex-c">
+<div class="flex-c" data-aos="fade-up">
   <h4>jskj;JKFSDFFFSFADFLSDF</h4>
   <div class="em">
-      <h2>emulator 1</h2>
+      <h2>emulator 7</h2>
   </div>
   <h4>jskj;JKLSDF</h4>
   <div class="em">
-    <h2>emulator 1</h2>
+    <h2>emulator 8</h2>
   </div>
   <h4>jskj;JKLSDF</h4>
   <div class="em">
-    <h2>emulator 1</h2>
+    <h2>emulator 9</h2>
   </div>
   <h4>jskj;JAFDASFFFFFFSADKLSDF</h4>
 </div>
 <div class="flex-c">
   <h4>jskj;JKFSDFFFSFADFLSDF</h4>
   <div class="em">
-      <h2>emulator 1</h2>
+      <h2>desc 7</h2>
   </div>
   <h4>jskj;JKLSDF</h4>
   <div class="em">
-    <h2>emulator 1</h2>
+    <h2>desc 8</h2>
   </div>
   <h4>jskj;JKLSDF</h4>
   <div class="em">
-    <h2>emulator 1</h2>
+    <h2>desc 9</h2>
   </div>
   <h4>jskj;JAFDASFFFFFFSADKLSDF</h4>
 </div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    AOS.init({
+      duration:1500,
+      once: false,
+      mirror: true,
+      easing: 'ease=in-out',
+    });
+    window.addEventListener('scroll', () => {
+      AOS.refresh();
+    });
+  });
+</script>
 </body>
 </html>
