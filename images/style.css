@@ -86,7 +86,7 @@ header {
     font-family: "Pixelify Sans", serif;
     
     
-    border: 15px solid rgb(187, 0, 187);
+    border: 15px solid #F22CC6;
     background-color:#19CAFA;
     overflow: hidden;
 }
@@ -146,7 +146,7 @@ header {
 .centered1{
   position: absolute;
   top: 17%;
-  left: 1500px;
+  left: 1520px;
   transform: translate(-50%, -50%);
 }
 .centered1 h3{
